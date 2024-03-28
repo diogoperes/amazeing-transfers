@@ -90,11 +90,12 @@
 // }
 
 .navbar {
-  .btn.contact {
+  .contact {
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 12px;
+    height: 30px;
+    width: 30px;
   }
 }
 
@@ -129,9 +130,9 @@
     background: linear-gradient(180deg, rgba(33, 37, 41, 0.75) 0%, rgba(33, 37, 41, 0.5) 25%, rgba(255, 255, 255, 0) 75%);
   }
 
-  .title {
-    // position: absolute
-  }
+  // .title {
+  //   position: absolute
+  // }
 
 }
 

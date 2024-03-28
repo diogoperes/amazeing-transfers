@@ -6,38 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/starter.css">
   <title>Bootstrap npm starter</title>
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
 
   <!-- icons from https://www.svgrepo.com/ -->
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- <a class="navbar-brand" href="#">
-        <img src="/assets/img/a-maze-ing-high-resolution-logo-circle.png" alt="" width="30" height="30">
-        A-maze-ing Transfers
-      </a> -->
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <div id="navbar">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">
+          <img src="/assets/img/a-maze-ing-high-resolution-logo-circle.png" alt="" width="30" height="30">
+          A-maze-ing Transfers
+        </a> -->
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Why Choose Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#scrollspySecondSection">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#scrollspyThirdSection">Services</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#scrollspyFourthSection">Contacts</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <button type="button" class="btn btn-outline-light contact">Contact Us</button>
-  </nav>
+
+      <a href="https://api.whatsapp.com/send?phone=15551234567" target="_blank" class="navbar-brand m-0">
+        <img src="./assets/img/whatsapp.png" alt="whatsapp" class="d-inline-block align-top contact">
+      </a>
+
+      <!-- <a href="https://api.whatsapp.com/send?phone=15551234567" target="_blank" class="btn btn-outline-light contact"
+        role="button">Contact Us</a> -->
+      <!-- <button type="button" class="btn btn-outline-light contact"
+        href="https://api.whatsapp.com/send?phone=15551234567">Contact Us</button> -->
+    </nav>
+
+  </div>
 
   <section class="first-section">
     <img class="bg-image" src="./assets/img/bck.jpg" />
@@ -63,8 +75,8 @@
     </div> -->
   </section>
 
-  <section class="second-section py-5">
-    <div class="container">
+  <section class="second-section py-5" id="scrollspySecondSection">
+    <div class="container py-2">
       <h2 class="display-6 mb-5 text-center">Reasons for our success</h2>
 
       <!-- <div class="row">
@@ -200,24 +212,72 @@
 
   </section>
 
-  <section class="third-section py-5">
-    <div class="container">
+  <section class="third-section py-5" id="scrollspyThirdSection">
+    <div class="container py-2">
       <h2 class="display-6 mb-5 text-center">Our Services</h2>
 
       <div class="row cards ">
         <div class="col-md-12 col-lg-6 my-2">
-          <div class="card mb-3">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card mb-3 shadow border-0">
+            <img src="./assets/img/services-aeroport-sm.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
+              <h5 class="card-title">Aeroport</h5>
+              <p class="card-text">Lisbon (LIS) and Faro (FAO)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 my-2">
+          <div class="card mb-3 shadow border-0">
+            <img src="./assets/img/services-interzones-sm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Interzones</h5>
+              <p class="card-text">Restaurants, Beaches, Activities, etc</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 my-2">
+          <div class="card mb-3 shadow border-0">
+            <img src="./assets/img/services-golf-sm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Golf</h5>
+              <p class="card-text">Silves Golf, Alto Golf</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-6 my-2">
+          <div class="card mb-3 shadow border-0">
+            <img src="./assets/img/services-events-sm.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Events</h5>
+              <p class="card-text">Weddings, Baptisms, etc</p>
             </div>
           </div>
         </div>
       </div>
 
     </div>
+  </section>
+
+  <section class="fourth-section py-5 bg-dark" id="scrollspyFourthSection">
+    <div class="container pb-5 pt-2">
+      <h2 class="display-6 mb-5 text-center text-white">Contacts</h2>
+
+      <div class="row cards text-white text-center">
+
+        <div class="col-sm-12 col-md-6 py-2">
+          <span>Email: geral.amazeingtransfers@gmail.com</span>
+        </div>
+
+        <div class="col-sm-12 col-md-6 py-2">
+          <span>Phone: +351 912345678</span>
+        </div>
+
+      </div>
+    </div>
+
   </section>
 
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
