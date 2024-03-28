@@ -1,0 +1,157 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+@import "bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+// $enable-gradients: true;
+// $enable-shadows: true;
+
+// Customize some defaults
+// $body-color: #333;
+// $body-bg: #fff;
+// $border-radius: .4rem;
+// $success: #7952b3;
+
+// @import "bootstrap/scss/functions"; // Required
+// @import "bootstrap/scss/variables"; // Required
+// @import "bootstrap/scss/mixins"; // Required
+
+// @import "bootstrap/scss/root"; // Required
+// @import "bootstrap/scss/reboot"; // Required
+// @import "bootstrap/scss/type";
+// // @import "bootstrap/scss/images";
+// // @import "bootstrap/scss/code";
+// @import "bootstrap/scss/grid";
+// // @import "bootstrap/scss/tables";
+// // @import "bootstrap/scss/forms";
+// @import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
+// // @import "bootstrap/scss/dropdown";
+// // @import "bootstrap/scss/button-group";
+// // @import "bootstrap/scss/input-group"; // Requires forms
+// // @import "bootstrap/scss/custom-forms";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar"; // Requires nav
+// // @import "bootstrap/scss/card";
+// // @import "bootstrap/scss/breadcrumb";
+// // @import "bootstrap/scss/pagination";
+// // @import "bootstrap/scss/badge";
+// // @import "bootstrap/scss/jumbotron";
+// // @import "bootstrap/scss/alert";
+// // @import "bootstrap/scss/progress";
+// // @import "bootstrap/scss/media";
+// // @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// // @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal"; // Requires transitions
+// // @import "bootstrap/scss/tooltip";
+// // @import "bootstrap/scss/popover";
+// // @import "bootstrap/scss/carousel";
+// // @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/utilities";
+// // @import "bootstrap/scss/print";
+
+
+// //
+// // Custom styles
+// //
+
+// @import "icon-list";
+
+// body {
+//   // padding: 3rem 1.5rem;
+// }
+
+// // Style Bootstrap icons
+// .bi {
+//   fill: currentcolor;
+// }
+
+.navbar {
+  .btn.contact {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.first-section {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+
+  .bg-image {
+    // background-size: cover;
+    // width: 100%;
+    // position: relative;
+
+    min-width: 550px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 400px;
+    width: 100%;
+    height: auto;
+  }
+
+  .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 100%;
+    background: linear-gradient(180deg, rgba(33, 37, 41, 0.75) 0%, rgba(33, 37, 41, 0.5) 25%, rgba(255, 255, 255, 0) 75%);
+  }
+
+  .title {
+    // position: absolute
+  }
+
+}
+
+.second-section {
+  display: inline-block;
+  width: 100%;
+  background: #f3f3f3;
+
+  .card {
+    .icon {
+      text-align: center;
+
+      svg {
+        color: #414141;
+        height: auto;
+        max-width: 100%;
+        width: 60px;
+        margin: 20px;
+      }
+
+    }
+  }
+}
