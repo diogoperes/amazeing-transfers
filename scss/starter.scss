@@ -93,13 +93,15 @@
   .contact {
     position: absolute;
     right: 20px;
-    top: 12px;
-    height: 30px;
-    width: 30px;
+    top: 8px;
+    // top: 12px;
+    // height: 30px;
+    // width: 30px;
   }
+
 }
 
-.first-section {
+.hero-section {
   width: 100%;
   max-height: 400px;
   overflow: hidden;
@@ -136,7 +138,7 @@
 
 }
 
-.second-section {
+.reasons-section {
   display: inline-block;
   width: 100%;
   background: #f3f3f3;
@@ -155,4 +157,48 @@
 
     }
   }
+}
+
+
+
+.contacts-section {
+  position: relative;
+
+  // .mapContainer {
+  //   position: relative;
+  //   height: 324px;
+  //   width: 100vw;
+
+  .map {
+    // https://stackoverflow.com/questions/42457368/google-maps-night-mode-embed-iframe
+    // filter: grayscale(100%) invert(92%) contrast(83%);
+    filter: saturate(90%) brightness(70%);
+    margin-bottom: -6px;
+    transition: filter 1s ease;
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  // }
+
+  .socials {
+
+    svg {
+      color: #414141;
+      height: auto;
+      width: 40px;
+      margin: 20px;
+    }
+
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
